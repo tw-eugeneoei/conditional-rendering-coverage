@@ -10,13 +10,13 @@ describe("HomeView", async () => {
     getByRole("heading", { name: "Hello world" });
   });
 
-  //   it("should display 'Hola Human' on button click", async () => {
-  //     const user = userEvent.setup();
-  //     const { getByRole, findByRole } = render(HomeView);
-  //     const button = getByRole("button", { name: "Toggle Message" });
+  // it("should display 'Hola Human' on button click", async () => {
+  //   const user = userEvent.setup();
+  //   const { getByRole, findByRole } = render(HomeView);
+  //   const button = getByRole("button", { name: "Toggle Message" });
 
-  //     user.click(button);
+  //   user.click(button);
 
-  //     await findByRole("heading", { name: "Hola Human" });
-  //   });
+  //   await findByRole("heading", { name: "Hola Human" });
+  // });
 });
