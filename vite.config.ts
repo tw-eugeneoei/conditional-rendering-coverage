@@ -16,8 +16,20 @@ export default defineConfig({
     globals: true,
     watch: false,
     environment: "jsdom",
+    // coverage report shows only for files with tests
     coverage: {
-      provider: "istanbul", // or 'c8'
+      all: true,
+      reportsDirectory: "../coverage",
+      provider: "istanbul",
     },
+
+    // // generates empty coverage report
+    // coverage: {
+    //   all: true,
+    //   include: ["src/**/*.{ts,vue}"],
+    //   // include: ["src/**/*"], // this doesnt work either
+    //   reportsDirectory: "../coverage",
+    //   provider: "istanbul",
+    // },
   },
 });
